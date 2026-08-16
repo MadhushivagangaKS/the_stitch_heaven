@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Stitch Heaven</title>
+    <meta name="description" content="Handcrafted pieces with heart." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">The Stitch Heaven</h1>
+        <p class="tagline">Handcrafted pieces with heart</p>
+        <p class="story-line">We believe the most beautiful things in life are made by hand. Every item in our collection is 100% handcrafted with care, creativity, and a high attention to detail.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="catalog" class="gallery" aria-label="Product gallery"></section>
+
+      <section class="custom-order">
+        <h2>Looking for something truly one-of-a-kind?</h2>
+        <p>
+          We know that the best gifts (even if they are for yourself!) are personal. That is why we specialize in custom orders.
+          If you love one of our designs but want it in a different color, size, or style—or if you have a completely new idea you want us to create from scratch—we are here to make it happen.
+          Reach out to us, and let’s craft something beautiful together.
+        </p>
+      </section>
+    </main>
+
+    <div id="product-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+        <img id="modal-image" src="" alt="" />
+        <div class="modal-content">
+          <h2 id="modal-title">Product</h2>
+          <p id="modal-desc"></p>
+          <div class="modal-actions">
+            <a id="wa-button" class="btn btn-wa" target="_blank" rel="noopener noreferrer">Inquire via WhatsApp</a>
+            <a id="instagram-link" class="btn btn-ghost" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
